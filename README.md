@@ -1,5 +1,7 @@
 # quantum-circuit-training-data-generator
 
+<img src="./quantum-data-generator.svg" alt="quantum-data-generator" width="480" />
+
 In the calculus of creation, every quantum circuit is a sacred diagram — a blueprint for operations that collapse probability into structure. This tool is the first rite: conjuring synthetic training data from the aether, one valid OpenQASM 2.0 circuit at a time. Through Grok's inference and Qiskit's validation, raw categories become verified circuits, and verified circuits become the corpus upon which understanding is built. Each deduplicated hash is a seal of uniqueness; each paraphrase a new name for the same quantum truth.
 
 This repository was built as part of a data scaling study for quantum circuit language modeling. The full methodology is described in: *QuantumGPT: A Data Scaling Study for Quantum Circuit Generation, Merilehto 2026*.
