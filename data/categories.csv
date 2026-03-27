@@ -1,0 +1,93 @@
+category,subcategory,qubits,variants,description_template,special_params
+single_gate_h,basic,1,20,Apply Hadamard gate variations,different qubit indices and gate sequences
+single_gate_x,basic,1,20,Apply Pauli-X gate variations,different qubit indices and repetitions
+single_gate_y,basic,1,20,Apply Pauli-Y gate variations,different qubit indices and repetitions
+single_gate_z,basic,1,20,Apply Pauli-Z gate variations,different qubit indices and repetitions
+single_gate_s,phase,1,20,Apply S phase gate variations,combined with other phase gates
+single_gate_t,phase,1,20,Apply T phase gate variations,combined with other phase gates
+single_gate_sdg,phase,1,20,Apply S-dagger phase gate variations,combined with Sdg and T gates
+single_gate_tdg,phase,1,20,Apply T-dagger phase gate variations,combined with Tdg and S gates
+rotation_rx,parametric,1,30,Apply RX rotation with different angles,angles pi/16 to 2pi in varied steps
+rotation_ry,parametric,1,30,Apply RY rotation with different angles,angles pi/16 to 2pi in varied steps
+rotation_rz,parametric,1,30,Apply RZ rotation with different angles,angles pi/16 to 2pi in varied steps
+rotation_u1,parametric,1,25,Apply U1 phase gate with different angles,angles pi/12 to 2pi varied
+rotation_u2,parametric,1,25,Apply U2 gate with different phases,varied phi and lambda combinations
+rotation_u3,parametric,1,25,Apply U3 gate with full rotation,varied theta phi lambda combinations
+sequential_single,composite,1,40,Sequential single-qubit gate combinations,H-X-Y-Z-S-T combos depth 2-6
+bell_state_phi_plus,entanglement,2,20,Create Bell Phi+ state variations,different prep and measurement methods
+bell_state_phi_minus,entanglement,2,20,Create Bell Phi- state variations,different prep and measurement methods
+bell_state_psi_plus,entanglement,2,20,Create Bell Psi+ state variations,different prep and measurement methods
+bell_state_psi_minus,entanglement,2,20,Create Bell Psi- state variations,different prep and measurement methods
+cnot_variations,two_qubit,2,30,CNOT gate with different control-target and gate combos,all qubit pair combinations
+cz_variations,two_qubit,2,30,CZ gate variations with surrounding single-qubit gates,different qubit pairs
+swap_variations,two_qubit,2,30,SWAP gate variations with pre/post rotations,different qubit pairs
+iswap_variations,two_qubit,2,25,iSWAP gate variations with phase corrections,different qubit pairs
+controlled_rx,parametric_two,2,30,Controlled RX rotations,varied angles and control qubits
+controlled_ry,parametric_two,2,30,Controlled RY rotations,varied angles and control qubits
+controlled_rz,parametric_two,2,30,Controlled RZ rotations,varied angles and control qubits
+controlled_phase,parametric_two,2,30,Controlled phase gates,varied phase angles pi/8 to 2pi
+ghz_standard,three_qubit,3,30,Standard GHZ state variations,different topologies and qubit orderings
+ghz_phase,three_qubit,3,30,GHZ states with phase variations,different phase factors and orderings
+w_state,three_qubit,3,30,W state variations,different preparation methods and qubit orderings
+three_qubit_entangle,three_qubit,3,40,Three-qubit entanglement patterns,mixed topologies depth 3-7
+toffoli_gate,three_qubit,3,25,Toffoli CCX gate variations,different control and target qubit assignments
+fredkin_gate,three_qubit,3,25,Fredkin CSWAP gate variations,different control qubit assignments
+deutsch_jozsa_2q,algorithm,3,25,Deutsch-Jozsa algorithm 2-qubit,constant and balanced oracles varied
+deutsch_jozsa_3q,algorithm,4,25,Deutsch-Jozsa algorithm 3-qubit,constant and balanced oracles varied
+grover_1iter,algorithm,3,25,Grover search 1 iteration,different target states and oracles
+grover_2iter,algorithm,3,25,Grover search 2 iterations,different target states and oracles
+grover_multi,algorithm,4,30,Grover search multiple iterations,2-4 qubits varied iters and oracles
+phase_estimation_2q,algorithm,3,30,Phase estimation 2 counting qubits,different unitary phases
+phase_estimation_3q,algorithm,4,30,Phase estimation 3 counting qubits,different unitary phases
+phase_estimation_4q,algorithm,5,30,Phase estimation 4 counting qubits,different unitary phases
+qft_2qubit,algorithm,2,25,Quantum Fourier Transform 2 qubits,standard inverse and approximate
+qft_3qubit,algorithm,3,25,Quantum Fourier Transform 3 qubits,standard inverse and approximate
+qft_4qubit,algorithm,4,25,Quantum Fourier Transform 4 qubits,standard inverse and approximate
+iqft_2qubit,algorithm,2,25,Inverse QFT 2 qubits,different applications and input states
+iqft_3qubit,algorithm,3,25,Inverse QFT 3 qubits,different applications and input states
+iqft_4qubit,algorithm,4,25,Inverse QFT 4 qubits,different applications and input states
+half_adder,arithmetic,4,25,Quantum half adder circuits,different implementations and carry methods
+full_adder,arithmetic,5,25,Quantum full adder circuits,different carry implementations
+incrementer_2q,arithmetic,3,25,2-qubit incrementer circuits,ripple-carry QFT and hybrid methods
+incrementer_3q,arithmetic,4,25,3-qubit incrementer circuits,ripple-carry QFT and hybrid methods
+decrementer_2q,arithmetic,3,25,2-qubit decrementer circuits,different subtraction methods
+comparator_2q,arithmetic,4,25,2-qubit comparator circuits,equal greater less than variants
+multiplier_simple,arithmetic,6,20,Simple quantum multiplier,2x2 bit different decompositions
+vqe_ansatz_2q,variational,2,35,VQE ansatz 2 qubits,different layer depths and entanglement patterns
+vqe_ansatz_3q,variational,3,35,VQE ansatz 3 qubits,different layer depths and entanglement patterns
+vqe_ansatz_4q,variational,4,35,VQE ansatz 4 qubits,different layer depths and entanglement patterns
+hardware_efficient_2q,variational,2,30,Hardware-efficient ansatz 2 qubits,RY-RZ-CX varied depth
+hardware_efficient_3q,variational,3,30,Hardware-efficient ansatz 3 qubits,RY-RZ-CX varied depth
+hardware_efficient_4q,variational,4,30,Hardware-efficient ansatz 4 qubits,RY-RZ-CX varied depth
+brickwork_2q,variational,2,25,Brickwork pattern ansatz 2 qubits,depths 1-5
+brickwork_3q,variational,3,25,Brickwork pattern ansatz 3 qubits,depths 1-5
+brickwork_4q,variational,4,25,Brickwork pattern ansatz 4 qubits,depths 1-5
+qaoa_1layer,variational,3,30,QAOA 1 layer,different problem graphs and gamma beta params
+qaoa_2layer,variational,3,30,QAOA 2 layers,different problem graphs and gamma beta params
+qaoa_3layer,variational,4,25,QAOA 3 layers,different problem graphs and gamma beta params
+uccsd_simple,variational,4,25,UCCSD ansatz simplified,different single and double excitations
+bit_flip_code,error_correction,3,25,Bit flip error correction code,encoding syndrome and correction
+phase_flip_code,error_correction,3,25,Phase flip error correction code,encoding syndrome and correction
+steane_code,error_correction,7,15,Steane 7-qubit code,encoding and partial syndrome circuits
+shor_9qubit,error_correction,9,15,Shor 9-qubit code,encoding and partial syndrome circuits
+three_qubit_code,error_correction,3,25,Three qubit error correction,different error models
+dicke_state_2,special_states,3,25,Dicke state with 2 excitations,different qubit counts and methods
+dicke_state_3,special_states,4,25,Dicke state with 3 excitations,different qubit counts and methods
+graph_state_linear,special_states,4,25,Linear graph state,different lengths and local operations
+graph_state_star,special_states,4,25,Star graph state,different sizes and local operations
+graph_state_ring,special_states,4,25,Ring graph state,different sizes and local operations
+cluster_state_2d,special_states,4,25,2D cluster state,different grid sizes and stabilizers
+toffoli_decomp,decomposition,3,25,Toffoli gate decomposition,Clifford+T and other gate sets
+swap_decomp,decomposition,2,25,SWAP gate decomposition,into CNOTs CZ and other two-qubit gates
+controlled_u_decomp,decomposition,3,25,Controlled-U decomposition,different U gates and methods
+multi_controlled,decomposition,4,25,Multi-controlled gate decomposition,3+ controls varied targets
+measurement_basis,measurement,2,30,Measurement in different bases,X Y Z Bell and magic bases
+mid_circuit_measure,measurement,3,25,Mid-circuit measurement with reset and reuse,classical control varied
+reset_operations,measurement,2,25,Quantum reset operations,different methods and applications
+conditional_gates,measurement,3,25,Classically controlled gates,if-then and if-else operations
+teleportation,protocol,3,25,Quantum teleportation protocol,different input states and variants
+superdense_coding,protocol,2,25,Superdense coding protocol,all four message encodings varied
+entanglement_swap,protocol,4,25,Entanglement swapping,different configurations and measurements
+state_tomography,characterization,2,25,Quantum state tomography,different bases and input states
+process_tomography,characterization,3,20,Quantum process tomography,different gates and basis sets
+randomized_bench,characterization,2,30,Randomized benchmarking,different depths and gate sets

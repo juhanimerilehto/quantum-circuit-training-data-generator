@@ -1,0 +1,10 @@
+# Validated on: RTX 4070 12GB, Ryzen 9 5950X, 128GB RAM, Windows 11, CUDA 12.x, Python 3.11, conda
+
+# API client (xAI Grok API uses OpenAI protocol)
+openai>=1.0
+
+# QASM validation
+qiskit>=1.0
+
+# Environment variable loading
+python-dotenv>=1.0

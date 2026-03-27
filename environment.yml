@@ -1,0 +1,12 @@
+# Validated on: RTX 4070 12GB, Ryzen 9 5950X, 128GB RAM, Windows 11, CUDA 12.x, Python 3.11, conda
+name: qctdg
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - openai>=1.0
+    - qiskit>=1.0
+    - python-dotenv>=1.0
